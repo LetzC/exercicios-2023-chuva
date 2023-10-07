@@ -1,0 +1,78 @@
+.home-content {
+  display: grid;
+  grid-template-columns: 78.3rem auto;
+  padding-top: 2rem;
+  column-gap: 3rem;
+
+  .main-title {
+    color: $color-orange-main;
+
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 125%;
+  }
+
+  .container-video {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+
+    width: 78.3rem;
+    height: 43.9rem;
+
+    h2 {
+      font-size: 2.4rem;
+      letter-spacing: 1.2px;
+
+      color: $color-white;
+
+      padding: 3rem;
+    }
+    .video-info {
+      display: flex;
+      place-items: center;
+
+      gap: 1.7rem;
+      padding: 5rem 3rem;
+
+      img {
+        border: 1px solid $color-orange-main;
+        padding: 0.2rem;
+      }
+
+      .create-info {
+        font-family: $font-roboto;
+        font-weight: 900;
+        color: $color-white;
+
+        h3 {
+          font-size: 3.4rem;
+          letter-spacing: 1.7px;
+        }
+        h4 {
+          font-size: 2rem;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .overlay-image {
+      width: 100%;
+      height: 43.7rem;
+
+      position: absolute;
+      top: 0;
+      z-index: -1;
+
+      background-color: #723a1c;
+      opacity: 0.6;
+
+      border-radius: 5px;
+    }
+    .video {
+      position: absolute;
+      top: 0;
+      z-index: -2;
+    }
+  }
+}
