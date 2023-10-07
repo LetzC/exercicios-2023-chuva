@@ -112,6 +112,14 @@
           font-family: $font-quicksand;
           font-size: 1.4rem;
         }
+        img {
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            scale: (1.1);
+          }
+        }
       }
     }
   }
