@@ -1,0 +1,33 @@
+.container-summary {
+  margin: 3rem 0;
+  border: $border-style;
+  height: 18.9rem;
+
+  p {
+    color: $text-list;
+
+    font-family: $font-quicksand;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 162.5%;
+    letter-spacing: 0.28px;
+
+    padding: 1.5rem;
+  }
+
+  .btn-show-more {
+    color: $color-orange-main;
+
+    font-family: $font-quicksand;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 152.344%;
+    letter-spacing: 0.28px;
+
+    cursor: pointer;
+  }
+
+  #more {
+    display: none;
+  }
+}
