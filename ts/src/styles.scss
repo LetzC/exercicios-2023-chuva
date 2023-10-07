@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "./scss/common.scss";
+// Importando fontes
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+// Importando arquivos
+@import "./scss/variables.scss", "./scss/common.scss", "./scss/nav";
