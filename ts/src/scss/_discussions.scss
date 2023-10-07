@@ -66,9 +66,12 @@
 
     gap: 1.7rem;
     padding: 1.5rem;
+
     .container-topic {
       border: $border-style;
       border-radius: $border-radius;
+
+      box-shadow: 0rem 0rem 0.5rem $color-lines;
 
       padding: 1.7rem 2.4rem;
 
