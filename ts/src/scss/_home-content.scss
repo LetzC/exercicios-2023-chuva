@@ -5,8 +5,6 @@
   column-gap: 3rem;
 
   .main-title {
-    color: $color-orange-main;
-
     font-size: 2rem;
     font-weight: 900;
     line-height: 125%;
@@ -73,6 +71,101 @@
       position: absolute;
       top: 0;
       z-index: -2;
+    }
+  }
+
+  .container-interaction {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .text-orange {
+      margin-top: 1.2rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 178.571%;
+      letter-spacing: 0.7px;
+    }
+
+    .container-buttons {
+      display: flex;
+      gap: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img:not(.button-download img) {
+        background-color: $color-orange-main;
+        padding: 0.6rem 1.2rem;
+        border-radius: $border-radius;
+      }
+
+      .button-download {
+        display: flex;
+        place-items: center;
+
+        width: max-content;
+
+        gap: 0.5rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 5px;
+
+        background-color: $color-orange-main;
+
+        p {
+          color: $color-white;
+          font-family: $font-roboto;
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .container-details {
+    overflow: auto;
+
+    width: 24.2rem;
+    height: 43.9rem;
+    border: $border-style;
+    border-radius: $border-radius;
+    margin: auto;
+
+    .container-tags,
+    .container-authors {
+      color: $text-list;
+      font-family: $font-quicksand;
+      line-height: 120%;
+
+      font-weight: 400;
+
+      padding: 1.5rem;
+    }
+
+    .container-tags {
+      font-size: 1.2rem;
+
+      letter-spacing: 0.24px;
+    }
+
+    .container-authors {
+      font-size: 1.4rem;
+
+      letter-spacing: 0.28px;
+    }
+
+    .container-universities {
+      color: $text-light-grey;
+      font-family: $font-quicksand;
+
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0.24px;
+
+      margin-top: 3rem;
+      padding: 1.5rem;
     }
   }
 }
