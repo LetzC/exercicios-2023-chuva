@@ -78,56 +78,90 @@
 
       box-shadow: 0rem 0rem 0.5rem $color-lines;
 
-      padding: 1.7rem 2.4rem;
-
-      .topic-title {
-        .text-orange {
-          font-family: $font-quicksand;
-          font-size: 1.6rem;
-          font-weight: 700;
-        }
-        p {
-          color: $text-list;
-          font-family: $font-quicksand;
-          font-size: 1.2rem;
-          font-weight: 500;
-
-          margin-top: 0.3rem;
-        }
-      }
-
       .topic-content {
         padding: 1.7rem 2.3rem;
 
         .topic-message {
-        color: $text-list;
-        font-family: $font-quicksand;
-        font-size: 1.4rem;
-        font-weight: 400;
-
-        margin-top: 1rem;
-      }
-
-      .topic-info {
-        display: flex;
-        place-items: center;
-
-        gap: 1.5rem;
-        margin-top: 1.1rem;
-
-        p {
-          color: #757575;
+          color: $text-list;
           font-family: $font-quicksand;
           font-size: 1.4rem;
-        }
-        img {
-          cursor: pointer;
-          transition: 0.5s;
+          font-weight: 400;
 
-          &:hover {
-            scale: (1.1);
+          margin-top: 1rem;
+        }
+
+        .topic-info {
+          display: flex;
+          place-items: center;
+
+          gap: 1.5rem;
+          margin-top: 1.1rem;
+
+          p {
+            color: #757575;
+            font-family: $font-quicksand;
+            font-size: 1.4rem;
+          }
+          img {
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+              scale: (1.1);
+            }
           }
         }
+      }
+    }
+
+    .comments-container {
+      display: flex;
+      flex-direction: column;
+
+      background-color: #f8f8f8;
+
+      .comment-container {
+        padding: 1.8rem 2.3rem 3.6rem 2.3rem;
+
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          top: 0;
+          right: 0;
+          background-color: $color-lines;
+        }
+
+        .text-orange {
+          font-size: 1.4rem;
+        }
+
+        .comment-info {
+          display: flex;
+          justify-content: space-between;
+          place-items: center;
+        }
+
+        .author-hierarchy {
+          display: flex;
+          gap: 1.33rem;
+          place-items: center;
+        }
+
+        .comment {
+          color: $subtitle-sections;
+          font-family: $font-quicksand;
+          font-size: 1.4rem;
+
+          margin-top: 1rem;
+        }
+      }
+
+      .comment-container:nth-of-type(2) {
+        background-color: $color-white;
       }
     }
   }
