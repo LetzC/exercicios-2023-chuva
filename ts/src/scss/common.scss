@@ -7,6 +7,13 @@
   text-decoration: none;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 0.2rem;
+}
+
 html {
   /* a cada 1rem será considera 10px */
   font-size: 62.5%;
