@@ -97,6 +97,9 @@
       }
 
       .topic-content {
+        padding: 1.7rem 2.3rem;
+
+        .topic-message {
         color: $text-list;
         font-family: $font-quicksand;
         font-size: 1.4rem;
