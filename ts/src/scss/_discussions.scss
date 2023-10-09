@@ -3,11 +3,11 @@
   border-radius: $border-radius;
 
   .container-create-topic {
-    display: flex;
-    place-items: center;
-    flex-direction: column;
-    position: relative;
+    display: none !important;
+  }
 
+  .container-create-topic {
+    place-items: center;
     padding: 1.5rem 21.6rem;
 
     &::before {
@@ -44,23 +44,72 @@
     }
 
     .btn-create-topic {
-      display: flex;
       position: relative;
 
       gap: 0.6rem;
       padding: 0.7rem 1.3rem;
 
-      color: $color-white;
-      background: $orange-gradient;
-
       border-radius: $border-radius;
+
       box-shadow: 0rem 0.1rem 0.5rem $text-light-grey;
+    }
+  }
 
-      cursor: pointer;
-      transition: 0.5s;
+  .container-form {
+    padding: 1.5rem 2rem;
 
-      &:hover {
-        background: $orange-gradient-hover;
+    .form-title {
+      color: $subtitle-sections;
+
+      font-family: $font-quicksand;
+      font-size: 1.4rem;
+
+      text-align: center;
+
+      margin-bottom: 2.2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .text-orange {
+        font-family: $font-roboto;
+        margin-bottom: 0.1rem;
+      }
+      .subject {
+        padding: 1.1rem 2.3rem;
+
+        margin-bottom: 1rem;
+
+        &::placeholder {
+          color: #4d4d4d;
+          font-family: $font-quicksand;
+          font-size: 1.4rem;
+        }
+      }
+      .content {
+        padding: 1.1rem 2.3rem;
+        height: 10vh;
+      }
+      .container-button-send {
+        display: flex;
+        background-color: $greenish-gray;
+
+        justify-content: end;
+
+        border: 1px solid $input-border;
+        border-top: 1px solid transparent;
+
+        border-radius: $border-radius;
+
+        button {
+          width: 20.5rem;
+
+          padding: 0.8rem 6.6rem;
+
+          justify-content: center;
+        }
       }
     }
   }
