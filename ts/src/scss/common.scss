@@ -50,3 +50,18 @@ h5 {
   color: $color-orange-main;
   font-family: $font-roboto;
 }
+
+.topic-author {
+  color: $text-list;
+  font-family: $font-quicksand;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  margin-top: 0.3rem;
+}
+
+.text-orange {
+  font-family: $font-quicksand;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
