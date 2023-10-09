@@ -65,3 +65,38 @@ h5 {
   font-size: 1.6rem;
   font-weight: 700;
 }
+
+.container-create-topic,
+.container-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form input,
+form textarea {
+  position: relative;
+  z-index: 2;
+
+  border: 1px solid $input-border;
+  border-radius: $border-radius;
+
+  &:focus {
+    outline: 1px solid $color-orange-main;
+  }
+}
+
+.btn-create-topic,
+form button {
+  display: flex;
+
+  color: $color-white;
+  background: $orange-gradient;
+
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: $orange-gradient-hover;
+  }
+}
