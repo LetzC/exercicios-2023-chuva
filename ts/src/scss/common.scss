@@ -74,10 +74,27 @@ h5 {
 }
 
 .container-create-topic,
-.container-form {
+.container-form,
+.container-form-sent {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.container-form,
+.container-form-sent {
+  padding: 1.5rem 2rem;
+
+  p {
+    color: $subtitle-sections;
+
+    font-family: $font-quicksand;
+    font-size: 1.4rem;
+
+    text-align: center;
+
+    margin-bottom: 2.2rem;
+  }
 }
 
 form input,
@@ -94,6 +111,7 @@ form textarea {
 }
 
 .btn-create-topic,
+.btn-create-new-topic,
 form button {
   display: flex;
 
