@@ -107,3 +107,8 @@ form button {
     background: $orange-gradient-hover;
   }
 }
+
+#more-summary,
+#more-message {
+  display: none;
+}
