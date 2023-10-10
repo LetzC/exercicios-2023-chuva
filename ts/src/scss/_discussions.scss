@@ -190,7 +190,7 @@
     .topic-sent {
       background-color: $greenish-gray;
       position: relative;
-      display: flex;
+      display: none;
       place-items: center;
 
       .success-message {
