@@ -32,7 +32,7 @@ img {
   display: block;
 }
 
-.container-form-sent a,
+.container-form-sent a:not(.btn-create-new-topic),
 .topic-sent a {
   color: $color-orange-link;
   font-family: $font-quicksand;
@@ -137,6 +137,15 @@ form button {
   &:hover {
     background: $orange-gradient-hover;
   }
+}
+
+.btn-create-topic,
+.btn-create-new-topic {
+  color: $color-white;
+  font-family: $font-quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 106.667%;
 }
 
 #more-summary,
