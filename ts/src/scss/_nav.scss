@@ -57,13 +57,14 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -0.2rem;
       bottom: 0;
       left: 0;
       right: 0;
-      width: 5px;
-      height: 33px;
+      width: 0.5rem;
+      height: 3.3rem;
       background: $orange-gradient;
+      z-index: 2;
     }
   }
 }
