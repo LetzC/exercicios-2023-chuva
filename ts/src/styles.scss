@@ -7,3 +7,9 @@
 @import "./scss/variables.scss", "./scss/common.scss", "./scss/nav",
   "./scss/header", "./scss/home-content", "./scss/summary", "./scss/discussions",
   "./scss/footer";
+
+@media (max-width: 1336px) {
+  html {
+    font-size: 50%;
+  }
+}

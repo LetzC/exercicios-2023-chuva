@@ -22,8 +22,9 @@ html {
 main,
 header,
 footer {
-  margin-left: 22rem;
-  padding: 0rem 4.3rem;
+  max-width: calc(100% - 22rem);
+  margin-left: auto;
+  padding: 0rem 4.5rem;
 }
 
 img {

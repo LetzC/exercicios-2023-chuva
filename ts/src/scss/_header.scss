@@ -2,7 +2,7 @@ header {
   background-color: $orange-light-bg;
 
   height: 7.6rem;
-  padding: 0.5rem 3.6rem;
+  padding-right: 2.9rem;
 
   display: flex;
   place-items: center;
@@ -30,8 +30,7 @@ header {
     border: 2px solid #cccccc;
     border-radius: 3px;
 
-    width: 9.7rem;
-    height: 3.4rem;
+    padding: 0.5rem 1rem;
 
     img {
       position: relative;
