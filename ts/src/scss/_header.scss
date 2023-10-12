@@ -48,8 +48,27 @@ header {
 
   .container-user {
     display: flex;
+    position: relative;
     text-align: end;
     gap: 1rem;
+
+    .notification {
+      position: absolute;
+      right: -0.5rem;
+      top: -0.5rem;
+
+      padding: 0.2rem 0.6rem;
+      border-radius: 50%;
+
+      background-color: $danger-color;
+
+      .notification-quantity {
+        color: $color-white;
+        font-family: $font-roboto;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
 
     .user-info {
       p {
