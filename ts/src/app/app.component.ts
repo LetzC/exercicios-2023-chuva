@@ -10,6 +10,8 @@ export class AppComponent {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+  const links = document.querySelectorAll('a');
+
   // Elementos relacionados ao Summary
   const summaryContent = document.querySelector('.summary-content') as HTMLParagraphElement;
 
@@ -30,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const btnCreateNewTopic = document.querySelector(".btn-create-new-topic") as HTMLButtonElement;
 
-  console.log(btnCreateTopic)
 
   // Elementos relacionados ao form
   const containerForm = document.querySelector(".container-form") as HTMLElement;
@@ -39,6 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const containerFormSent = document.querySelector(".container-form-sent") as HTMLElement;
   const topicSent = document.querySelector(".topic-sent") as HTMLElement;
 
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+    });
+  });
 
   function readMore(trigger: HTMLElement, target1: HTMLElement, target2?: HTMLElement) {
     if (target1.style.display === 'none' || target1.style.display === '') {
@@ -81,7 +87,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  function sentForm(containerForm: HTMLElement, containerFormSent: HTMLElement, topicSent: HTMLElement) {
+  function sentForm(containerForm: HTMLElement, containerFormSent: HTMLElement, topicSent: HTMLElement, event: Event) {
+    event.preventDefault();
+
     if (containerForm.style.display === 'none' || containerForm.style.display === '') {
       containerForm.style.display = 'flex';
       containerFormSent.style.display = 'none';
@@ -97,5 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
   answeredTopic?.addEventListener('click', () => showComments(textMoreMessage, commentsContainer, pointsMessage));
   btnCreateTopic?.addEventListener('click', () => showForm(btnCreateTopic.parentNode as HTMLElement, containerForm));
   btnCreateNewTopic?.addEventListener('click', () => showForm(btnCreateNewTopic.parentNode as HTMLElement, containerForm));
-  btnSend?.addEventListener('click', () => sentForm(containerForm, containerFormSent, topicSent));
+  btnSend?.addEventListener('click', (event) => sentForm(containerForm, containerFormSent, topicSent, event));
 })
+
