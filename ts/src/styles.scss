@@ -13,3 +13,9 @@
     font-size: 50%;
   }
 }
+
+@media (min-width: 2100px) {
+  html {
+    font-size: 100%;
+  }
+}
