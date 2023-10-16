@@ -17,6 +17,14 @@
       background-color: $color-lines;
     }
 
+    @media (max-width: 1500px) {
+      padding: 1.5rem 0rem;
+
+      &::before {
+        top: 21rem;
+      }
+    }
+
     .text-orange {
       font-size: 1.8rem;
       font-weight: 700;
